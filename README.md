@@ -1,8 +1,8 @@
 alpine-pkg-nodejs
 =================
 
-+ **nodejs**: 4.2.3-r0
-+ **libuv**: 1.7.5-r0
++ **nodejs**: 5.6.0-r0
++ **libuv**: 1.8.0-r0
 
 WHAT IS THIS?
 -------------
