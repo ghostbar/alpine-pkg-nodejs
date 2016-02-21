@@ -1,0 +1,44 @@
+# Maintainer: Jose-Luis Rivas <me@ghostbar.co>
+pkgname=libuv
+pkgver=1.8.0
+_sover=${pkgver%.*}
+pkgrel=0
+pkgdesc="Cross-platform asychronous I/O"
+url="http://libuv.org"
+arch="all"
+license="MIT and BSD and ISC"
+depends=""
+depends_dev=""
+makedepends="$depends_dev automake autoconf \
+	libtool linux-headers"
+install=""
+subpackages="$pkgname-dev"
+source="http://dist.libuv.org/dist/v$pkgver/libuv-v$pkgver.tar.gz"
+_builddir="$srcdir"/libuv-v$pkgver
+prepare() {
+	local i
+	cd "$_builddir"
+	for i in $source; do
+		case $i in
+		*.patch) msg $i; patch -p1 -i "$srcdir"/$i || return 1;;
+		esac
+	done
+}
+
+build() {
+	cd "$_builddir"
+	sh autogen.sh
+	./configure --prefix=/usr
+	make CFLAGS="$CFLAGS -D__USE_MISC" BUILDTYPE=Release
+	install -Dm644 LICENSE \
+		"$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+}
+
+package() {
+	cd "$_builddir"
+	make DESTDIR="$pkgdir" install
+}
+
+md5sums="f4229c4360625e973ae933cb92e1faf7  libuv-v1.8.0.tar.gz"
+sha256sums="6511f734da4fe082dacf85967606d600b7bce557bb9b2f0d2539193535323125  libuv-v1.8.0.tar.gz"
+sha512sums="05bb3c94b8e97f0c73e3613a1edd0c73f697509e67107a573454cb274becd8074abf2a8889064bf1392e10b48f2ec380ccd0b34a98b83793c0202601175003d5  libuv-v1.8.0.tar.gz"
