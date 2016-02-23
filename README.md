@@ -1,8 +1,10 @@
 alpine-pkg-nodejs
 =================
 
-+ **nodejs**: 5.6.0-r0
-+ **libuv**: 1.8.0-r0
++ **nodejs**: 5.7.0-r0 (`x86_64`) / 5.6.0-r0 (`armhf`)
++ **libuv**: 1.8.0-r0 (`armhf` && `x86_64`)
+
+[More alpine-related stuff here!](https://github.com/ghostbar/alpine-devel)
 
 WHAT IS THIS?
 -------------
@@ -20,8 +22,8 @@ This is an alternative repository for the latest nodejs packages using alpine
 You could download the package directly as well with:
 
     $ curl -O \
-    https://ghostbar.github.io/alpine-pkg-nodejs/v3.2/pkgs/x86_64/nodejs-4.2.1-r0.apk
-    # apk add --allow-untrusted nodejs-4.2.1-r0.apk
+    https://ghostbar.github.io/alpine-pkg-nodejs/v3.2/pkgs/x86_64/nodejs-5.6.0-r0.apk
+    # apk add --allow-untrusted nodejs-5.6.0-r0.apk
 
 **Which way is better to download?**
 
