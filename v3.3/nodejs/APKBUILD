@@ -1,6 +1,6 @@
 # Maintainer: Jose-Luis Rivas <me@ghostbar.co>
 pkgname=nodejs
-pkgver=5.7.1
+pkgver=5.8.0
 pkgrel=0
 pkgdesc='Evented I/O for V8 javascript'
 url='https://nodejs.org/'
