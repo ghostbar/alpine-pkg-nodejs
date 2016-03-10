@@ -44,6 +44,6 @@ package() {
 	done
 }
 
-md5sums="3cd7c01dedcfd41ad9e5a445dcaee3ad  node-v5.7.1.tar.gz"
-sha256sums="ecd4956335c6b86f1b72fd203abd9a833717e6800edb12208d0e3ce625330198  node-v5.7.1.tar.gz"
-sha512sums="3702ef0a4cba9c106ece330ce81291b17d3ca1216efd486fc2a97ce1d0baaf0d457bce4f261d1af5898369b6a040c35cf64a6185cb54374e6417ad445580b937  node-v5.7.1.tar.gz"
+md5sums="ee5c24aaeb37ad4cc2ddd96a65ab1f4b  node-v5.8.0.tar.gz"
+sha256sums="e8cd580cec1c62053e6357633b9e46d49df1fd5b9fc5c804ca59ba80d722b898  node-v5.8.0.tar.gz"
+sha512sums="67ba531b2f32b153d4b48996090f6564d4bc2857fdd78f7d77d5d20b35d2506515f124aa7d752e8a87bc1fb402daca7f15cc885e151b79f3127d15faf0653d5b  node-v5.8.0.tar.gz"
