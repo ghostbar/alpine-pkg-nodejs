@@ -1,6 +1,6 @@
 # Maintainer: Jose-Luis Rivas <me@ghostbar.co>
 pkgname=libuv
-pkgver=1.9.0
+pkgver=1.9.1
 _sover=${pkgver%.*}
 pkgrel=0
 pkgdesc="Cross-platform asychronous I/O"
