@@ -43,6 +43,6 @@ package() {
 	done
 }
 
-md5sums="03f511e8f5475a8dafeba3dd32950890  node-v6.1.0.tar.gz"
-sha256sums="9e67ef0b8611e16e6e311eccf0489a50fe76ceebeea3023ef4f51be647ae4bc3  node-v6.1.0.tar.gz"
-sha512sums="64ae5b57b56e52f6c84052537d1e0f1ddbd16486cf8c5d7f3cbadb49ea32717ad4b4bfa0f9dc1b4998eca99a009dcf689f265e06b6431aefae120acc86704974  node-v6.1.0.tar.gz"
+md5sums="aec5b7ca5c16a50848fc446f936cd4ce  node-v6.2.0.tar.gz"
+sha256sums="fcfd81847d78abb690aafaf46223d3b59aedc54fb200a2ab2bfd9a39ad6e94b9  node-v6.2.0.tar.gz"
+sha512sums="0c5b6b07894a86bc0501b7bf2bb713cfb3358cfefe6bcb7edfaa0ec9f6dfb8a9018f5a5192c6e48c7515cd9bc20acc2eec97a80cc537f04fe4414fcb1fcb63b0  node-v6.2.0.tar.gz"
