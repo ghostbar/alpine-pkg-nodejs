@@ -1,0 +1,48 @@
+# Maintainer: Jose-Luis Rivas <me@ghostbar.co>
+pkgname=nodejs
+pkgver=6.2.1
+pkgrel=0
+pkgdesc='Evented I/O for V8 javascript'
+url='https://nodejs.org/'
+arch='all'
+license='MIT'
+makedepends="$depends_dev python openssl-dev zlib-dev libuv-dev
+	linux-headers binutils-gold paxmark"
+subpackages="$pkgname-dev $pkgname-doc"
+source="https://nodejs.org/dist/v$pkgver/node-v$pkgver.tar.gz"
+_builddir="$srcdir"/node-v$pkgver
+
+prepare() {
+  local i
+  cd "$_builddir"
+  for i in $source; do
+    case $i in
+      *.patch) msg $i; patch -p1 -i "$srcdir"/$i || return 1;;
+    esac
+  done
+}
+
+build() {
+  cd "$_builddir"
+	./configure --prefix=/usr \
+		--shared-zlib \
+		--shared-libuv || return 1
+	make || return 1
+}
+
+package() {
+	local d
+  cd "$_builddir"
+	make DESTDIR="$pkgdir" install || return 1
+	# paxmark so JIT works
+	paxmark -m "$pkgdir"/usr/bin/node || return 1
+
+	cp -pr "$pkgdir"/usr/lib/node_modules/npm/man "$pkgdir"/usr/share || return 1
+	for d in doc html man; do
+		rm -r "$pkgdir"/usr/lib/node_modules/npm/$d || return 1
+	done
+}
+
+md5sums="c327fe11c295485326940ff1b2740943  node-v6.2.1.tar.gz"
+sha256sums="fa26d4380150fbb69a48bddaec6143e176effe043cfe44e512c5ef9d22618b63  node-v6.2.1.tar.gz"
+sha512sums="1554fe51982275223eef76b69dfb8a51b7c9e544a9ed56f44cb354e17740fa556dcf2e17d40bd4d41e2ca352b9d83e2a798f6fa46eab066c6a0a076e79628708  node-v6.2.1.tar.gz"
