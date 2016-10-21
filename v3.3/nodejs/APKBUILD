@@ -1,6 +1,6 @@
 # Maintainer: Jose-Luis Rivas <me@ghostbar.co>
 pkgname=nodejs
-pkgver=6.7.0
+pkgver=6.9.1
 pkgrel=0
 pkgdesc='Evented I/O for V8 javascript'
 url='https://nodejs.org/'
@@ -43,6 +43,6 @@ package() {
 	done
 }
 
-md5sums="a42b7ab2bcf5f8d94a432163d90f3026  node-v6.7.0.tar.gz"
-sha256sums="02b8ee1719a11b9ab22bef9279519efaaf31dd0d39cba4c3a1176ccda400b8d6  node-v6.7.0.tar.gz"
-sha512sums="3cd095adc0866b780519006098b434e3b126f67a453e44863c773829de4ce29f573d13efa1c50af001009bdb433728309ef7109e144517ffc5dd5e3251b1f511  node-v6.7.0.tar.gz"
+md5sums="0d3117846c6704b36108fcdbf30e03c1  node-v6.9.1.tar.gz"
+sha256sums="a98997ca3a4d10751f0ebe97839b2308a31ae884b4203cda0c99cf36bc7fe3bf  node-v6.9.1.tar.gz"
+sha512sums="71a6e081006c8b77f34b5cc26b76c56944b4de77d7ed5e6068c72dbaf49fc18ed2894231f6a5cd0308c40e95c2e1eb5ee2abd1470fd646bb8db3b230913c5014  node-v6.9.1.tar.gz"
