@@ -1,6 +1,6 @@
 # Maintainer: Jose-Luis Rivas <me@ghostbar.co>
 pkgname=nodejs
-pkgver=7.1.0
+pkgver=7.2.0
 pkgrel=0
 pkgdesc='Evented I/O for V8 javascript'
 url='https://nodejs.org/'
@@ -43,6 +43,6 @@ package() {
 	done
 }
 
-md5sums="1db5df2cb025f9c70e83d9cf21c4266a  node-v7.1.0.tar.gz"
-sha256sums="595e7e2a37d1e0573044a90077bb12c0f750e5d8851899ffa74038238da9a983  node-v7.1.0.tar.gz"
-sha512sums="041e816adcd5a063c7b4167a73d30f213bc8ed888a9100ad3b5c3c23d4cd6005c7d55e5c38bfc76c4e418153a60aa0584bea2feba52f7e10be800166c4dc5b5c  node-v7.1.0.tar.gz"
+md5sums="ea2dd2de3e93b601f576bf24c1ab56ec  node-v7.2.0.tar.gz"
+sha256sums="c3f53a5d8cea145e25706bb21cdac62f1b3314db35785bcf468558a29cfc352f  node-v7.2.0.tar.gz"
+sha512sums="80a3eab891894064a7669ea08659eb2f675076476e5436b0a1b78f83ea0ebfcfd226dfe1847b5368a07a1f1bbe3038d3011013b3cbe8d8ed093ec7caa29c9603  node-v7.2.0.tar.gz"
