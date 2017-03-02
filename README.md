@@ -1,8 +1,8 @@
 alpine-pkg-nodejs
 =================
 
-+ **nodejs**: 7.5.0-r0 (`x86_64`)
-+ **libuv**: 1.10.1-r0 (`armhf` && `x86_64`)
++ **nodejs**: 7.7.1-r0 (`x86_64`)
++ **libuv**: 1.11.0-r0 (`armhf` && `x86_64`)
 
 [More alpine-related stuff here!](https://github.com/ghostbar/alpine-devel)
 
