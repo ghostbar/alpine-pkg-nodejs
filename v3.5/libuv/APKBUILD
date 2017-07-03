@@ -1,6 +1,6 @@
 # Maintainer: Jose-Luis Rivas <me@ghostbar.co>
 pkgname=libuv
-pkgver=1.11.0
+pkgver=1.12.0
 _sover=${pkgver%.*}
 pkgrel=0
 pkgdesc="Cross-platform asychronous I/O"
@@ -39,6 +39,6 @@ package() {
 	make DESTDIR="$pkgdir" install
 }
 
-md5sums="29bdf5e00fb8e0c8392aac53a2cc380a  libuv-v1.11.0.tar.gz"
-sha256sums="0f686994dcea6cb5cd3f50e35d5fdda07211b4b3586516df7c39bdbf19acb9a7  libuv-v1.11.0.tar.gz"
-sha512sums="5b56e4c337093c6ddc12f8353b011fba9e57fd84565e279bfc13a7d16d3b6dc01f02fee52a32f38ef630a0f5200fc63f3cc04137af21942422c3dcf535212f02  libuv-v1.11.0.tar.gz"
+md5sums="32a729c49ac14ed520d8f7c06d7d3826  libuv-v1.12.0.tar.gz"
+sha256sums="01730d1b5e9e278eec67394e7d44021ea318d5d29520c5aa8b65bc8a18b953c7  libuv-v1.12.0.tar.gz"
+sha512sums="42a360f94aa00fa8be2c1ee68708ce947e26dc1e866f8053e2f3f719418bb27a84285ed2ebd1290d34b56ba78b9c921d2379407f5c52c4653d00e3f5f176afee  libuv-v1.12.0.tar.gz"
